@@ -1,1 +1,9 @@
-<p>Aquí iria la info de un empleado</p>
+<p>Nombre del empleado: {{nombre}}</p>
+<p>Apellido del empleado: {{apellido}}</p>
+<p>Edad del empleado: {{edad<18 ? "es Menor de edad":"Mayor de edad"}}</p>  <!-- con el operador ternario modifica la edad para mostrar la mayoria de la edad  -->
+<!-- <p>Edad del empleado: {{getEdad()}}</p> -->  <!-- Coge la edad del retorno del metodo getEdad() especificado en el component.ts -->
+<p>Empresa del empleado: {{empresa.value}}</p>
+<div class="formulario_empresa">
+    Introduce la empresa: <input type="text" #empresa>
+    <input type="button" value="Aceptar"(click)="llamaEmpresa(empresa.value)"/>
+</div>

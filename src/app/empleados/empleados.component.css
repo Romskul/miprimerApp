@@ -1,0 +1,21 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+}
+.contenedor app-empleado {
+    align-self: flex-start;
+}
+
+
