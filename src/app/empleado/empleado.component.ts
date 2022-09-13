@@ -14,12 +14,18 @@ export class EmpleadoComponent implements OnInit {
   edad = 30;
   // private edad = 30;                               *Esta seria la forma de declarar una variable privada sólamente accesible desde este documento.
   // empresa = "Ticmatic";
-
   // getEdad(){                                       *Esta seria la forma de crear un método para obtener la edad.                  
   //   return this.edad;
   // }
-  llamaEmpresa(value:string){
+  habilitacionCuadro = false;
+  usuRegistrado = false;
 
+  
+  getRegistroUsuario(){
+    this.usuRegistrado = false;
+  }
+
+  llamaEmpresa(value:string){
   }
 
   constructor() { }
